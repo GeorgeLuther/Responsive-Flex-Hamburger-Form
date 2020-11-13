@@ -28,6 +28,9 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+a {
+    color: black;
+}
 a:visited {
     color: black;
 }
