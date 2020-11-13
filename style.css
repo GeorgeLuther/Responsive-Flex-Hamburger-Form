@@ -97,10 +97,9 @@ header {
     justify-content: space-evenly;
     padding: 20px;
   }
-  .contact-links {
-      z-index: 4;
-  }
-
+.contact-links li a {
+  z-index: 5;
+}
   /* Main Area */
   main #anchor-links {
     position: fixed;
