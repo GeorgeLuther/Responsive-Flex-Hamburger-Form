@@ -141,7 +141,10 @@ header {
   .last {
     order: 3
   }
-
+  #about-me h2 {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
   .me {
     position: relative;
     margin: -110px 0px;
