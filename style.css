@@ -37,6 +37,7 @@ a:visited {
 /* Header */
 header {
     position: fixed;
+    clear: both;
     width: 100%;
     box-shadow: 0 0 20px 8px rgba(0,0,0,0.2);
     z-index: 2;
@@ -79,11 +80,10 @@ header {
       display: flex;
       justify-content: space-between;
       list-style-type: none;
-      padding: 20px 30px;
   }
   #hamburger-dropdown a {
     color: black;
-    padding: 10%;
+    padding: 10px;
   }
   #hamburger-dropdown a:hover {
     color: rgb(238, 221, 196);
@@ -97,34 +97,254 @@ header {
     justify-content: space-evenly;
     padding: 20px;
   }
+  .contact-links {
+      z-index: 4;
+  }
+
+  /* Main Area */
+  main #anchor-links {
+    position: fixed;
+    clear: both;
+    z-index: 3;
+    top: 90px;
+    right: 2px;
+    color: rgba(238, 221, 196, 0);
+  }
+  main #anchor-links li a {
+      color:rgb(238, 221, 196);
+      font-size: 30px; 
+  }
+  h2 {
+    color: rgb(238, 221, 196);
+    padding: 30px 0 10px 0;
+  }
+  h3 {
+      padding: 6px 0;
+  }
+  p {
+      font-weight: 450;
+  }
+  #intro {
+      position: relative;
+      top: 80px;
+      margin-bottom: 70px;
+  }
+  #intro h2 {
+    padding: 0;
+    color: black;
+  }
+  .b {
+      display: flex;
+      flex-direction: column;
+  }
+  .first {
+    order: 1
+  }
+  .gradient-overlay {
+    order: 2
+  }
+  .last {
+    order: 3
+  }
+
+  .me {
+    position: relative;
+    margin: -110px 0px;
+    width: 100%;
+    z-index: 0;
+  }
+  /* WILL SWITCH TO FULL JPG WITH GRADIENT OVERLAY WHEN I UNDERSTAND HOW*/
+  /* .gradient-overlay {
+      background-color: black;
+    position: relative;
+  }
+  .gradient-overlay::after {
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 1;
+    } */
+
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .group {
+    position: relative;
+    background-color: #ebd5d0;
+    z-index: 1;
+    padding: 16px;
+    margin: 0 8%;
+    max-width: 90%;
+  }
+  .item {
+    position: relative;
+    z-index: 1;
+    margin: 0 12px;
+    padding-top: 20px;
+  }
+  .offerings {
+    padding: 10px 0 0 24px;
+    list-style-type: circle;
+  }
+  form .left, form .right, form .bottom {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+  }
+  input {
+    margin-top: 8px;
+    background-color: rgb(238, 221, 196, .8);
+    border-radius: 3px;
+    border: 2px solid black;
+    padding: 0 4px;
+  }
+  textarea {
+    height: 175px;
+    background-color: rgb(238, 221, 196, .8);
+    border-radius: 5px;
+    border: 2px solid black;
+  }
+  button {
+    background-color: rgb(238, 221, 196, .8);
+    border-radius: 15px;
+    border: 2px solid black;
+  }
+  .contact-info, .links {
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .contact-info a, .links a {
+    padding: 10px;
+  }
+  #contact-form {
+      margin-bottom: 30px;
+  }
 @media all and (min-width:600px) {
     header {
         display: flex;
+        padding: 10px;
+    }
+    header h1 {
+       flex: 1;
+       padding-left: 8px;
+       padding-top: 20px;
+       margin: 0;
+       text-align: left;
+    }
+    header nav {
+        position: static;
+        display: flex;
+        padding-right: 28px;
     }
     #hamburger-btn {
         display: none;
     }
-    header h1 {
-        order: 1;
-        padding-left: 8px;
-    }
-    header nav {
-        order: 2;
-    }
-    #hamburger-dropdown {
-        display: inline;
-        background-color: rgb(238, 221, 196, .8);
-    }
-    .dropdown-btn {
+    header nav #hamburger-dropdown {
+        margin-top: 0;
+        width: auto;
+        padding: 0;
+        position: static;
         display: flex;
-        padding-top: -6px;
+        flex-direction: column;
+        justify-content: right;
+        background-color: rgb(238, 221, 196, 0);
+    }
+    header nav #hamburger-dropdown ul {
+        padding: 0;
+        justify-content: space-between;
+    }
+    header nav #hamburger-dropdown ul li {
+        padding: 4px;
+        justify-content: space-between;
+    }
+    #hamburger-dropdown ul li a {
+        padding: 0;
+    }
+    header nav #hamburger-dropdown .external-links .dropdown-btn {
+        display: inherit;
+    }
+    header nav #hamburger-dropdown .external-links .dropdown-btn:hover {
+        color:rgb(238, 221, 196);
+    }
+    header nav #hamburger-dropdown .external-links .dropdown-btn:hover {
+        color:rgb(238, 221, 196);
+    }
+    #hamburger-dropdown .contact-links {
+        position: absolute;
+        right: 20px;
+        top: 108px;
+        flex-direction: column;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        background-color: rgb(238, 221, 196, .8);
+        display: none;
+        padding: 14px;
+    } 
+    #intro {
+        top: 140px;
+        margin-bottom: 150px;
+    }
+    main #anchor-links {
+        top: 120px;
+        left: 8px;
+    }
+    .group {
+        border-radius: 8px;
+        padding: 10px 0;
+    }
+    .item {
+        padding: 30px;
+    }
+    .first {
+      order: 2;
+    }
+    .gradient-overlay {
+      order: 1;
+    }
+    .last {
+      order: 3;
 
     }
-    .contact-links {
-        position: absolute;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        right: 0;
-        flex-direction: column;
-        background-color: rgb(238, 221, 196, .8)
+    .me {
+    width: 200px;
+    margin-left: 25px;
     }
+    #about-me h2 {
+        z-index: 4;
+    }
+    .offerings {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        flex-wrap: wrap;
+        padding-left: 0;
+    }
+    .offerings li {
+        padding: 14px 14px;
+        margin: 0;
+    }
+    .a {
+        order: 2;
+    }
+    .b {
+        order: 1;
+    }
+    .c {
+        order: 3;
+    }
+    .contacts {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .contacts .item {
+        text-align: center;
+        padding-bottom: 40px;
+    }
+    
 }
