@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>    
+    <title>George Luther</title>
+    <meta name="Description" content="George Luther offers professional services in software engineering, web development, music, and audio!">
+    <script src="https://kit.fontawesome.com/6cb83674ce.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" rel="stylesheet"/>
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon.ico"/>
+    <link href="style.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+<!-- HEADER -->
+        <header>
+            <nav class="hamburger" aria-label="Site Menu">
+                    <a href="javascript:void(0);" id="hamburger-btn" onclick="showHamburger()">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                    <div id="hamburger-dropdown">
+                        <div class="page-links">
+                            <li><a href="code.html">CODE</a></li>
+                            <li>◈</li>
+                            <li><a href="audio.html">AUDIO</a></li> 
+                        </div>
+                        <div class="external-links">
+                            <li><a href="https://www.linkedin.com/in/georgeluther/" target="_blank"><i class="fab fa-linkedin" ></i></a></li>
+                            <li><a href="https://github.com/GeorgeLuther" target="_blank"><i class="fab fa-github-square"></i></a></li>
+                            <li><a href="https://www.instagram.com/georgeluther/?hl=en" target="_blank"><i class="fab fa-instagram-square"></i></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCsNW38Yjrw3uQx3UWXHS0_w/about?view_as=subscriber" target="_blank"><i class="fab fa-youtube-square"></i></a></li>
+                            <li class="dashboard-dropdown">
+                                <button class="dropdown-btn">
+                                    <i class="fas fa-address-book"></i>
+                                </button>
+                                <div class="contact-links">
+                                    <li><a href="sms://+18605596235&amp;body=I%20saw%20your%20website..."><i class="fas fa-comment-dots"></i></a></li>
+                                    <li><a href="mailto:george.e.luther@gmail.com"><i class="fas fa-paper-plane"></i></a></li>
+                                    <li><a href="tel:1-860-559-6235"><i class="fas fa-phone"></i></a></li>
+                                    <li><a href="#contact-form"><i class="fas fa-envelope"></i></a></li>
+                                </div>
+                            </li>
+                        </div>
+                    </div>                
+            </nav>
+            <h1>GEORGE LUTHER</h1>
+        </header>
+    <script>
+        function showHamburger() {
+            var x = document.getElementById("hamburger-dropdown");
+            var y = document.getElementById("hamburger-btn");
+            if (x.style.display === "block") {
+            x.style.display = "none";
+            y.style.color = "black";
+            y.style.border = "none"
+            } else {
+            x.style.display = "block";
+            y.style.color = " rgb(160, 135, 122)";
+            y.style.border = "2px solid  rgb(160, 135, 122)";
+            }
+        }
+    </script>
+  </body>

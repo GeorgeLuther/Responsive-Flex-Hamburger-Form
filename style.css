@@ -1,0 +1,95 @@
+/*Global*/
+html {
+	scroll-behavior: smooth;
+}
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+body {
+    background-size: cover;
+    background-color:#161616;
+    background-image: url("images/pattern-grey.svg");
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+@font-face {
+  font-family: 'NFNGroteskBold';
+  src:url('fonts/NFNGroteskBold.ttf.woff') format('woff'),
+      url('fonts/NFNGroteskBold.ttf.svg#NFNGroteskBold') format('svg'),
+      url('fonts/NFNGroteskBold.ttf.eot'),
+      url('fonts/NFNGroteskBold.ttf.eot?#iefix') format('embedded-opentype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+/* Header */
+header {
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 0 20px 8px rgba(0,0,0,0.2);
+    z-index: 2;
+    background-color: rgb(238, 221, 196, .8);
+  }
+  h1, h2, h3 {
+    font-family: 'NFNGroteskBold';
+    text-align: center;
+    letter-spacing: 2px;
+  }
+  header h1 {
+    font-size: 38px;
+    padding: 0;
+    margin: 10px 0 10px 0;
+  }
+  header nav {
+    float: left;
+    clear: both;
+    position: absolute;
+    top: 21px;
+    padding-left: 4px;
+    list-style: none;
+  }
+  #hamburger-btn {
+    border: none;
+    outline: none;
+    color: black;
+    background-color: inherit;
+    padding: 6px 8px;
+    border-radius: 100%;
+  }
+  #hamburger-btn:hover #hamburger-dropdown {
+    display: block;
+  }
+  #hamburger-dropdown {
+    display: none;
+    position: absolute;
+    left: 0;
+    margin: 24px 0 0 0;
+    
+    background-color: rgb(202, 175, 160, .9);
+    width: 100vw;
+    list-style: none;
+    font-size: 36px;
+    color:black;
+  }
+  #hamburger-dropdown a {
+    color: black;
+  }
+  #hamburger-dropdown a:hover {
+    color: rgb(238, 221, 196);
+  }
+  .dropdown-btn {
+      display: none;
+  }
+  .page-links, .external-links, .contact-links {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+  }
