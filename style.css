@@ -164,11 +164,19 @@ header {
       height: 100%;
       opacity: 1;
     } */
-
+  .app-blurb {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  .screenshot {
+    padding: 16px;
+  }
   section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: auto;
   }
   .group {
     position: relative;
@@ -177,6 +185,9 @@ header {
     padding: 16px;
     margin: 0 8%;
     max-width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
   .item {
     position: relative;
@@ -223,6 +234,12 @@ header {
   }
   #contact-form {
       margin-bottom: 30px;
+  }
+  p {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    align-self: center;
   }
 @media all and (min-width:600px) {
     header {
@@ -312,7 +329,7 @@ header {
     }
     .me {
     width: 200px;
-    margin-left: 25px;
+    padding-right: 50vw;
     }
     #about-me h2 {
         z-index: 4;
