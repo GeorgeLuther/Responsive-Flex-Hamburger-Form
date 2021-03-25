@@ -21,21 +21,21 @@
                 <div id="hamburger-dropdown">
                     <ul class="page-links">
                         <li>CODE</li>
-                        <li><a href="index.html">◈</a></li>
+                        <li><span class="link">Home</span><a href="index.html">◈</a></li>
                         <li>AUDIO</li> 
                     </ul>
                     <ul class="external-links">
-                        <li><a href="https://www.linkedin.com/in/georgeluther/" target="_blank"><i class="fab fa-linkedin" ></i></a></li>
-                        <li><a href="https://github.com/GeorgeLuther" target="_blank"><i class="fab fa-github-square"></i></a></li>
-                        <li><a href="https://www.instagram.com/georgeluther/?hl=en" target="_blank"><i class="fab fa-instagram-square"></i></a></li>
-                        <li><a href="https://www.youtube.com/channel/UCsNW38Yjrw3uQx3UWXHS0_w/about?view_as=subscriber" target="_blank"><i class="fab fa-youtube-square"></i></a></li>
-                        <li class="dropdown-btn"><a href="javascript:void(0);" onclick="showContactLinks()"><i class="fas fa-address-book"></i></a></li> 
+                        <li><a href="https://www.linkedin.com/in/georgeluther/" target="_blank"><span class="link">LinkedIn</span><i class="fab fa-linkedin" ></i></a></li>
+                        <li><a href="https://github.com/GeorgeLuther" target="_blank"><span class="link">GitHub</span><i class="fab fa-github-square"></i></a></li>
+                        <li><a href="https://www.instagram.com/georgeluther/?hl=en" target="_blank"><span class="link">Instagram</span><i class="fab fa-instagram-square"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCsNW38Yjrw3uQx3UWXHS0_w/about?view_as=subscriber" target="_blank"><span class="link">YouTube</span><i class="fab fa-youtube-square"></i></a></li>
+                        <li class="dropdown-btn"><a href="javascript:void(0);" onclick="showContactLinks()"><span class="link">Contact</span><i class="fas fa-address-book"></i></a></li> 
                     </ul>                            
                     <ul class="contact-links" id="contactLinks">
-                        <li><a href="sms://+18605596235&amp;body=I%20saw%20your%20website..."><i class="fas fa-comment-dots"></i></a></li>
-                        <li><a href="mailto:george.e.luther@gmail.com"><i class="fas fa-paper-plane"></i></a></li>
-                        <li><a href="tel:1-860-559-6235"><i class="fas fa-phone"></i></a></li>
-                        <li><a href="#contact-form"><i class="fas fa-envelope"></i></a></li>
+                        <li><a href="sms://+18605596235&amp;body=I%20saw%20your%20website..."><span class="link">Text</span><i class="fas fa-comment-dots"></i></a></li>
+                        <li><a href="mailto:george.e.luther@gmail.com"><span class="link">Email</span><i class="fas fa-paper-plane"></i></a></li>
+                        <li><a href="tel:1-860-559-6235"><span class="link">Phone</span><i class="fas fa-phone"></i></a></li>
+                        <li><a href="#contact-form"><span class="link">Contact Form</span><i class="fas fa-envelope"></i></a></li>
                     </ul>
                 </div>                
             </nav>
@@ -43,11 +43,10 @@
 <!-- MAIN -->
     <main>
         <ul id="anchor-links">
-            <li><a href="#intro">◈</a></li>
-            <li><a href="#about-me">◈</a></li>
-            <li><a href="#services">◈</a></li>
-            <li><a href="#current-projects">◈</a></li>
-            <li><a href="#contact-form">◈</a></li>
+            <li><span class="link">Intro</span><a href="#intro">◈</a></li>
+            <li><span class="link">About Me</span><a href="#about-me">◈</a></li>
+            <li><span class="link">Projects</span><a href="#current-projects">◈</a></li>
+            <li><span class="link">Contact Form</span><a href="#contact-form">◈</a></li>
         </ul>
 <!-- INTRO -->
     <section id="intro">
@@ -88,7 +87,7 @@
             <section class="item">
                 <h3>POLYPERC</h3>
                 <div class="app-blurb">
-                    <img class="screenshot" src="images/polyperc-mobile.png" width="200" alt="a screenshot of polyperc"/>
+                    <img class="screenshot" src="images/polyperc-mobile.png" width="200" alt="a screenshot of Polyperc"/>
                     <p>A web app for generating and manipulating rhythmic patterns. I built it as part of an ongoing set of tools for assisted music creation. My ongoing goal for this project is to make it easy and enjoyable for anyone to create highly specific and intricate or totally random and improvised rhythms as quickly as possible. The keys to this are the various pattern generation methods that can be selected and tweaked to instantly create a pattern. Polyperc is a RESTful app made using Javascript, CSS, HTML, React, on the front-end. The backend was made using Express, Knex, postgreSQL. Libraries such as Tone.js and xss were used for audio reproduction and security. Goals for the future: user accounts, collaboration, MIDI Clock/Transport & IN/OUT, custom sample kits, larger hierarchical rhythmic structures, and machine learning aspects. Check it out or view the git below!</p>
                 </div>
                 <div class="links">
@@ -99,7 +98,7 @@
             <section class="item">
                 <h3>MOTIFORGE</h3>
                 <div class="app-blurb">
-                    <img class="screenshot" src="images/motiforge-mobile.png" width="200" alt="a screenshot of motiforge"/>
+                    <img class="screenshot" src="images/motiforge-mobile.png" width="200" alt="a screenshot of Motiforge"/>
                     <p>Motiforge is a CRUD application created to assists users in the music composition process. The front-end of this app was made in React, CSS, Jest, etc. The API was created using Express, Knex, and postgreSQL. Libraries such as bcrypt, jwt, and xss were used for authentication and security. Tone.js and Moment were also important for this. Users can create music from the basic building blocks of motifs, phrases, and form. My goal for this project is to explore how the order, proportions, and complexity of musical ideas affect the overall musicality of a composition. My long-term goal is to create an environment where users can pick and choose how much involvement and control they want over the creation process. Hopefully, the system will usually produce an interesting and tuneful result. Through this process of collaboration, the user and the system will both learn more about how to structure music. The process will help us refine our skills regarding what works well and what doesn't work to create enjoyable music. An alternative version is also in progress as an Ableton Live 'M4L' device made with JS and MaxMSP.</p>
                 </div>
                 <div class="links">
@@ -110,7 +109,7 @@
             <section class="item">
                 <h3>SPACED REPETITION</h3>
                 <div class="app-blurb">
-                    <img class="screenshot" src="images/spaced-repetition-mobile.png" width="200" alt="a screenshot of polyperc"/>
+                    <img class="screenshot" src="images/spaced-repetition-mobile.png" width="200" alt="a screenshot of Spaced Repetition"/>
                     <p>Spaced Repetition is a RESTful application created to help users learn languages. Users given a list of words to properly translate. Correctly answered words are displayed less frequently to maximize study time on words that need more review. This is made possible through a javascript/postgreSQL implementation of a singly-linked-list that control the order words. One major goal for this project was to implement working code based on testing requirements in cypress, supertest, and mocha. The front-end of this app was made in React, CSS, Jest, etc. The API was created using Express, Knex, and postgreSQL. Libraries such as bcrypt, jwt, and xss were used for authentication and security.</p>
                 </div>
                 <div class="links">
