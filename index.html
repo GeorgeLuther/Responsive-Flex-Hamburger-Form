@@ -16,6 +16,7 @@
             <h1><a href="index.html">GEORGE LUTHER</a></h1>
             <nav class="hamburger" aria-label="Site Menu">
                 <a href="javascript:void(0);" id="hamburger-btn" onclick="showHamburger()">
+                    <span class="link">Navigation Menu</span>
                     <i class="fas fa-bars"></i>
                 </a>
                 <div id="hamburger-dropdown">
@@ -133,12 +134,18 @@
         <div class="group e">
             <form action="https://formspree.io/f/mdopdowz" method="POST">
                 <div class="left">
-                    <input type="text" placeholder="Your Name" name="name">
-                    <input type="text" placeholder="Email" name="_replyto">
-                    <input type="text" placeholder="Subject" name="subject">
+                    <label class="label" for="name-input">Name</label>
+                        <input type="text" id="name-input" placeholder="Your Name" name="name">
+            
+                    <label class="label" for="email-input">Email</label>
+                        <input type="text" id="email-input" placeholder="Email" name="_replyto">
+
+                    <label class="label" for="subject-input">Subject</label>
+                        <input type="text" id="subject-input" placeholder="Subject" name="subject">
                 </div>
                 <div class="right">
-                    <textarea name="message"></textarea>
+                    <label class="label" for="message-input">Your Message</label>
+                        <textarea name="message" id="message-input"></textarea>
                 </div>
                 <div class="bottom">
                     <button type="submit">Send</button>
@@ -152,7 +159,7 @@
                     <a href="tel:1-860-559-6235">(860) 559-6235</a>
                 </div>
                 <div class="links">
-                    <a href="https://docs.google.com/document/d/1Rfu62-4bsjJmrpg82y7si3X3DYEFn1ES8I9_jx4CBPo/edit?usp=sharing" target="_blank">view my resume</a>
+                    <a href="https://docs.google.com/document/d/1Rfu62-4bsjJmrpg82y7si3X3DYEFn1ES8I9_jx4CBPo/edit?usp=sharing" target="_blank">resume</a>
                     <a href="https://www.linkedin.com/in/georgeluther/" target="_blank">linkedIn</a>
                     <a href="https://github.com/GeorgeLuther" target="_blank">github</a>
                     <a href="https://www.instagram.com/georgeluther/?hl=en" target="_blank">instagram</a>

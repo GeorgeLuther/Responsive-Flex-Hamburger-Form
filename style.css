@@ -223,8 +223,8 @@ header {
     border-radius: 15px;
     border: 2px solid black;
   }
-  .link {
-    font-size: 0;
+  .link, .label {
+    display: none;
   }
   .fas {
     font-size: 40px;
